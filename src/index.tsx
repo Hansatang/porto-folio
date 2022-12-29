@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Navbar from "./Navbar";
+import Navbar from "./components/Navbar/Navbar";
+import PageBody from "./PageBody";
+import { BrowserRouter} from "react-router-dom";
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Swirl from "./Swirl";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -15,11 +14,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Navbar />
-      <Routes>
-        <Route  path="/" element={<App />} />
-        <Route  path="/Swirl" element={<Swirl />} />
-      </Routes>
-      <App />
+      <PageBody/>
     </BrowserRouter>
   </React.StrictMode>
 );
