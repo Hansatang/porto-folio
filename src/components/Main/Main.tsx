@@ -6,19 +6,13 @@ function Main() {
   return (
     <div className="Main">
       <header className="Main-header">
+        <p>
+          This is my page made with React, where I improve my skill with it
+        </p>
         <img src={logo} className="Main-logo" alt="logo" />
         <p>
-          Edit <code>src/Home.tsx</code> and save to reload.
+          It also works as my portfolio 
         </p>
-        <a
-          className="Main-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h1 className="Main-logo">Swirl</h1>
-          Learn React
-        </a>
       </header>
     </div>
   );

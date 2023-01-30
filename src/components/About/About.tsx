@@ -2,8 +2,8 @@ import './About.scss';
 
 function About() {
   return (
-    <div className="Main">
-      <header className="Main-header">
+    <div className="About">
+      <header className="About-header">
         <p>ELO</p>
       </header>
     </div>

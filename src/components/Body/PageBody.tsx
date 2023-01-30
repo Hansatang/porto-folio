@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router-dom";
-import About from "./components/About/About";
-import Main from "./components/Main/Main";
+import About from "../About/About";
+import Main from "../Main/Main";
 
 function PageBody() {
   return (
     <Routes>
       <Route path="/" element={<Main />} />
-      <Route path="/Swirl" element={<About />} />
+      <Route path="/About" element={<About />} />
     </Routes>
   );
 }

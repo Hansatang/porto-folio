@@ -4,8 +4,7 @@ import "./Navbar.scss";
 function Navbar() {
   return (
     <div className="header">
-      <div className="desktop">
-        <div className="left_nav">Hello</div>
+        <div className="left_nav">Krzysztof Pacierz</div>
         <ul className="nav_list">
           <li className="nav_list_item">
             <div>
@@ -22,7 +21,7 @@ function Navbar() {
           <li className="nav_list_item">
             <div>
               <NavLink
-                to="/Swirl"
+                to="/About"
                 style={({ isActive }) => ({
                   color: isActive ? "greenyellow" : "red",
                 })}
@@ -33,7 +32,6 @@ function Navbar() {
           </li>
         </ul>
       </div>
-    </div>
   );
 }
 
