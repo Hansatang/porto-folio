@@ -1,55 +1,93 @@
 $text-color: rgb(255, 196, 0);
 
-.header {
-    height: 8vh;
-    padding: 1vh 40px;
-    font-family: "IBM Plex Sans", sans-serif;
-    color: rgb(238, 238, 238);
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    background-color: rgb(36, 41, 46);
-}
+.sidebar {
+  background-color: rgb(18, 161, 30, 0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1vh 0;
 
-.left_nav {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-style: italic;
-    margin-left: 1rem;
-    padding-right: 1rem;
-}
-
-.nav_list {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: auto;
-    list-style: none;
-}
-
-.nav_list_item {
-    flex: 0 0 auto;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-box-align: center;
-    align-items: center;
-    color: rgb(153, 153, 153);
-    display: flex;
-    font-size: 14px;
-    height: 25px;
-    -webkit-box-pack: center;
+  @media screen and (max-width: 768px) {
+    flex-direction: row;
     justify-content: center;
-    line-height: 16px;
-    margin: 0px 1.125rem;
-    text-decoration: none;
-    white-space: nowrap;
+    align-items: center;
+    height: auto;
+  }
 }
 
-li {
-    font-weight: 700;
-    margin-bottom: 1rem;
-    font-size: 5rem;
+a {
+  text-decoration: none;
 }
+
+.personal-info {
+  text-align: center;
+  color: inherit;
+}
+
+.card {
+  position: relative;
+  overflow-y: auto;
+  padding: 45px 40px;
+}
+
+.content {
+  margin-left: -40px;
+  margin-right: -40px;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.navigation {
+  margin: 40px 25px;
+  line-height: 30px;
+  position: relative;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.navigation-extend {
+  box-sizing: inherit;
+}
+
+.navigation ul li {
+  position: relative;
+  padding: 0 40px;
+}
+
+.navigation ul > li {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  color: #ccc;
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+}
+
+// .nav_list_item {
+//   padding: 1rem 2rem; /* Adjust padding according to your design */
+//   font-size: 1rem; /* Adjust font size according to your design */
+//   text-decoration: none;
+
+//   @media screen and (max-width: 768px) {
+//     padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+//   }
+// }

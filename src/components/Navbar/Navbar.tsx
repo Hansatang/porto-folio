@@ -1,37 +1,31 @@
-import { NavLink } from "react-router-dom";
 import "./Navbar.scss";
+import CustomNavLink from "../CustomNavLink/CustomNavLink";
 
 function Navbar() {
   return (
-    <div className="header">
-        <div className="left_nav">Krzysztof Pacierz</div>
-        <ul className="nav_list">
-          <li className="nav_list_item">
-            <div>
-              <NavLink
-                to="/"
-                style={({ isActive }) => ({
-                  color: isActive ? "greenyellow" : "red",
-                })}
-              >
-                Home
-              </NavLink>
-            </div>
-          </li>
-          <li className="nav_list_item">
-            <div>
-              <NavLink
-                to="/About"
-                style={({ isActive }) => ({
-                  color: isActive ? "greenyellow" : "red",
-                })}
-              >
-                About
-              </NavLink>
-            </div>
-          </li>
-        </ul>
+    <div className="sidebar">
+      <div className="card">
+        <a href="/" className="personal-info">
+          <div className="photo"></div>
+          <div className="content">
+            <h1 className="name">Krzysztof Pacierz</h1>
+            <h2 className="title">Software Developer Graduate</h2>
+          </div>
+        </a>
       </div>
+      <nav className="navigation">
+        <div className="navigation-extend">
+          <ul>
+            <li>
+              <CustomNavLink to="/">Home</CustomNavLink>
+            </li>
+            <li>
+              <CustomNavLink to="/About">About</CustomNavLink>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   );
 }
 

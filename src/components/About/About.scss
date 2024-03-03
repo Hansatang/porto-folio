@@ -1,38 +1,37 @@
 .About {
-    text-align: center;
-    background-color: #282c34;
-    min-height: 90vh;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
+  text-align: center;
+  background-color: #282c34;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.About-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.About-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.About-link {
+  color: #61dafb;
+}
+
+@keyframes About-logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-  
-  .About-logo {
-    height: 40vmin;
-    pointer-events: none;
+  to {
+    transform: rotate(360deg);
   }
-  
-  .About-header {
-    background-color: #282c34;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .About-link {
-    color: #61dafb;
-  }
-  
-  @keyframes About-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
+}
