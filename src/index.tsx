@@ -2,10 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import Navbar from "./components/Navbar/Navbar";
+import Sidebar from "./components/Sidebar/Sidebar";
 import PageBody from "./components/Body/PageBody";
 import Background from "./components/Background/Background";
 import { BrowserRouter } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
@@ -14,7 +15,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Background>
-        <Navbar />
+        <Sidebar />
         <PageBody />
       </Background>
     </BrowserRouter>
